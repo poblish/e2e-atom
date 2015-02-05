@@ -1,0 +1,41 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+      'label': 'E2E: Scenario control'
+      'submenu': [
+        {
+          'label': 'Pause'
+          'command': 'E2E:pauseScenario'
+        },
+        {
+          'label': 'Resume'
+          'command': 'E2E:resumeScenario'
+        },
+        {
+          'label': 'Cancel'
+          'command': 'E2E:cancelScenario'
+        }
+      ]
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'E2E: Scenario control'
+      'submenu': [
+        {
+          'label': 'Pause'
+          'command': 'E2E:pauseScenario'
+        },
+        {
+          'label': 'Resume'
+          'command': 'E2E:resumeScenario'
+        },
+        {
+          'label': 'Cancel'
+          'command': 'E2E:cancelScenario'
+        }
+      ]
+    ]
+  }
+]
