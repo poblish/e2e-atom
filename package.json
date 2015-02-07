@@ -1,7 +1,7 @@
 {
   "name": "E2E",
   "main": "./lib/e2-e",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A short description of your package",
   "repository": "https://github.com/poblish/e2e-atom",
   "license": "MIT",
