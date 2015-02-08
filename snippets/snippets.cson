@@ -1,0 +1,37 @@
+# See https://atom.io/docs/latest/creating-a-package#snippets for more details
+".source.yaml":
+
+  "Assert":
+    prefix: "as"
+    body: "- assert: $1"
+  "Assert Dash":
+    prefix: "- as"
+    body: "- assert: $1"
+  "Assert That":
+    prefix: "ast"
+    body: "- assert: {that: $1, eq: $2}"
+  "Assert That Dash":
+    prefix: "- ast"
+    body: "- assert: {that: $1, eq: $2}"
+
+  "WaitFor Full":
+    prefix: "w"
+    body: "- waitFor: {that: '$1', eq: '$2', timeout: $3}"
+
+  "Url":
+    prefix: "u"
+    body: "- url: /"
+  "Click":
+    prefix: "cl"
+    body: "- click: "
+  "Click By Id":
+    prefix: "cli"
+    body: "- click: \'\$$1\'"
+
+  "Type":
+    prefix: "t"
+    body: '- type: $1\r  in: \'#$2\''  # Buggy: \r breaks $2
+
+  "User":
+    prefix: "us"
+    body: "- user: {id: 0, user: $1, pass: $2}"
