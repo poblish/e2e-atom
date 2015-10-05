@@ -1,7 +1,7 @@
 {
   "name": "E2E",
   "main": "./lib/e2-e",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Live progress of E2E test script runs, with pause/restart/cancel",
   "repository": "https://github.com/poblish/e2e-atom",
   "license": "MIT",
