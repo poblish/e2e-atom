@@ -13,7 +13,7 @@ class E2EListener
     @socket = @io.connect('http://localhost:4333', {resource : 'node_modules/socket.io'})
 
     @socket.on 'status', (data) ->
-      updateStatus(editor,data) for editor in atom.workspace.getEditors()
+      updateStatus(editor,data) for editor in atom.workspace.getTextEditors()
       # @socket.emit 'pause', 'Msg!!!'
       return
 
